@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue"
-
-const Button = defineAsyncComponent(
-  // @ts-expect-error mfe
-  () => import("remoteWithButton/button")
-)
+// import remote button component here
 </script>
 
 <template>
@@ -13,7 +8,9 @@ const Button = defineAsyncComponent(
 
   <Suspense>
     <template #default>
-      <Button>Salam</Button>
+      <div class="">
+        [add remote button component here]
+      </div>
     </template>
     <template #fallback>
       <div>Loading Remote Component...</div>

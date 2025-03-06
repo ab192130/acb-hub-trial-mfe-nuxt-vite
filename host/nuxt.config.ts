@@ -33,7 +33,6 @@ export default defineNuxtConfig({
           name: "host-app",
           remotes: {
             remote: `${MFE_HOST}/_nuxt/remoteEntry.js`,
-            'remoteWithButton': `${MFE2_HOST}/client/remoteEntry.js`
           },
           shared: ["vue", "pinia"]
         })
