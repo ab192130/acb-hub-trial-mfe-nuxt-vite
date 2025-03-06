@@ -1,5 +1,12 @@
 <script setup lang="ts">
 // import remote button component here
+
+import { defineAsyncComponent } from "vue"
+
+const HelloWorld = defineAsyncComponent(
+  // @ts-expect-error mfe
+  () => import("vue/HelloWorld")
+)
 </script>
 
 <template>
@@ -9,7 +16,7 @@
   <Suspense>
     <template #default>
       <div class="">
-        [add remote button component here]
+        <HelloWorld/>
       </div>
     </template>
     <template #fallback>

@@ -31,6 +31,7 @@ export default defineNuxtConfig({
           name: "host-app",
           remotes: {
             remote: `${MFE_HOST}/_nuxt/remoteEntry.js`,
+            vue: 'http://localhost:3003/assets/remoteVue.js'
           },
           shared: ["vue", "pinia"]
         })
