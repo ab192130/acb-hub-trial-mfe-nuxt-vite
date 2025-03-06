@@ -1,4 +1,4 @@
-# acb-hub-trial-nuxt-vite-mfe
+# acb-hub-trial-mfe-nuxt-vite
 
 Attempt to run Nuxt 3 with Vite-based Micro-Frontends architecture.
 
