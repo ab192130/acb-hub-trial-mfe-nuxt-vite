@@ -3,7 +3,6 @@ import federation from "@originjs/vite-plugin-federation"
 import topLevelAwait from "vite-plugin-top-level-await"
 
 const MFE_HOST = process.env.NUXT_MFE_APP1_HOST
-const MFE2_HOST = process.env.NUXT_MFE_APP2_HOST
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
