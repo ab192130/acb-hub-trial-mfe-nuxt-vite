@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-finscore-mfe-remote",
+  "name": "nuxt-mfe-remote-finscore",
   "private": true,
   "type": "module",
   "scripts": {
