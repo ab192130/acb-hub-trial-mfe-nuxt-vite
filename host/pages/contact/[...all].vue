@@ -2,14 +2,16 @@
   <div class="container mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">FinScore (Remote)</h1>
     <div class="grid grid-cols-1 gap-4">
-      <Suspense>
-        <template #default>
-          <RemoteContactRouter label="propsFromHost" @increment="handleLog" />
-        </template>
-        <template #fallback>
-          <div>Loading Remote Component...</div>
-        </template>
-      </Suspense>
+      <client-only>
+        <Suspense>
+          <template #default>
+            <RemoteContactRouter label="propsFromHost" @increment="handleLog" />
+          </template>
+          <template #fallback>
+            <div>Loading Remote Component...</div>
+          </template>
+        </Suspense>
+      </client-only>
     </div>
   </div>
 </template>
