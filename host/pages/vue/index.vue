@@ -4,7 +4,7 @@
 
 <template>
 <div class="flex flex-col">
-  [index]
+  [vue-app-index]
 
   <Suspense>
     <template #default>
@@ -18,7 +18,3 @@
   </Suspense>
 </div>
 </template>
-
-<style scoped>
-
-</style>
