@@ -1,13 +1,16 @@
 <template>
-  <div class="rmt2">
-    <h1>rmt/pages/contact/properties.vue</h1>
-    <div>Contact prop</div>
-    <div>
-      <button type="button" @click="handleClick">Click: {{ counter }}</button>
-    </div>
-    <div class="links">
-      <NuxtLink to="/">Go to home</NuxtLink>
-      <NuxtLink to="/about">About</NuxtLink>
+  <div class="remote-bg">
+    <h1>Credits</h1>
+
+    <div class="" style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <div>
+        <div class="">Credits (Local): {{ counter }}</div>
+        <button type="button" @click="handleClick">Add Credit</button>
+      </div>
+      <div class="links">
+        <NuxtLink to="/">Go back to home</NuxtLink>
+<!--        <NuxtLink to="/about">About</NuxtLink>-->
+      </div>
     </div>
   </div>
 </template>
@@ -24,8 +27,8 @@ definePageMeta({
 </script>
 
 <style scoped>
-.rmt2 {
-  background: pink;
+.remote-bg {
+  background: gainsboro;
 }
 .links {
   display: flex;

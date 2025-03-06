@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-4">Contact page (Host)</h1>
+    <h1 class="text-2xl font-bold mb-4">FinScore (Remote)</h1>
     <div class="grid grid-cols-1 gap-4">
       <Suspense>
         <template #default>
           <RemoteContactRouter label="propsFromHost" @increment="handleLog" />
         </template>
         <template #fallback>
-          <div>Loading remote component...</div>
+          <div>Loading Remote Component...</div>
         </template>
       </Suspense>
     </div>

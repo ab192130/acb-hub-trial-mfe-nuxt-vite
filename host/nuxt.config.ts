@@ -3,6 +3,7 @@ import federation from "@originjs/vite-plugin-federation"
 import topLevelAwait from "vite-plugin-top-level-await"
 
 const MFE_HOST = process.env.NUXT_MFE_APP1_HOST
+const MFE2_HOST = process.env.NUXT_MFE_APP2_HOST
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -31,7 +32,8 @@ export default defineNuxtConfig({
         federation({
           name: "host-app",
           remotes: {
-            remote: `${MFE_HOST}/_nuxt/remoteEntry.js`
+            remote: `${MFE_HOST}/_nuxt/remoteEntry.js`,
+            'remoteWithButton': `${MFE2_HOST}/client/remoteEntry.js`
           },
           shared: ["vue", "pinia"]
         })

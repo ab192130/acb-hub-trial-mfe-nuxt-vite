@@ -26,9 +26,9 @@ useHostPinia()
  * @todo
  * it'll be nice if there is a way to dynamically match route and render..
  */
-const Index = defineAsyncComponent(() => import("@/pages/contact/index.vue"))
+const Index = defineAsyncComponent(() => import("~/pages/contact/index.vue"))
 const Properties = defineAsyncComponent(
-  () => import("@/pages/contact/properties.vue")
+  () => import("~/pages/contact/properties.vue")
 )
 
 let asyncPageComponent: unknown

@@ -1,14 +1,8 @@
-# vite-nuxt-mfe
+# acb-hub-trial-nuxt-vite-mfe
 
-Vite-based Nuxt 3 starter with Micro-frontend enabled.
+Attempt to run Nuxt 3 with Vite-based Micro-Frontends architecture.
 
-## Demo
-
-- Demo Web: https://demo-ab-nuxt-mfe-host.netlify.app/
-- Repo Host: https://github.com/antonybudianto/demo-nuxt-mfe1
-- Repo Remote: https://github.com/antonybudianto/demo-nuxt-mfe-rmt1
-
-## Initial setup
+## Setup
 
 ```
 cd host

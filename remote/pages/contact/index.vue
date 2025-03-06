@@ -1,13 +1,27 @@
 <template>
-  <div class="rmt">
-    <h1>rmt/pages/contact/index.vue</h1>
-    <div>Contact index</div>
+  <div class="remote-bg">
+    <h1>Score Reports</h1>
     <div>
-      count: {{ count }} / counterFromPinia: {{ counter.$state.count }} <br />
-      <button type="button" @click="count++">increment+ local</button>
-      <button type="button" @click="handleIncrementPinia">
-        increment+ pinia
-      </button>
+      <div class="store-item">
+        <div class="">
+          Score (Local): {{ count }}
+        </div>
+        <button type="button" @click="count++">
+          Increment
+        </button>
+      </div>
+      <div class="store-item">
+        <div class="">
+          Score (Pinia): {{ counter.$state.count }}
+        </div>
+        <button type="button" @click="handleIncrementPinia">
+          Increment
+        </button>
+      </div>
+    </div>
+    <div class="links">
+      <NuxtLink to="/">Go back to home</NuxtLink>
+      <!--        <NuxtLink to="/about">About</NuxtLink>-->
     </div>
   </div>
 </template>
@@ -26,7 +40,17 @@ const handleIncrementPinia = () => {
 }
 </script>
 <style scoped>
-.rmt {
-  background-color: antiquewhite;
+.remote-bg {
+  background-color: aquamarine;
+}
+
+.store-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
 }
 </style>
