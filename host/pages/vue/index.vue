@@ -13,15 +13,17 @@ const HelloWorld = defineAsyncComponent(
 <div class="flex flex-col">
   [vue-app-index]
 
-  <Suspense>
-    <template #default>
-      <div class="">
-        <HelloWorld/>
-      </div>
-    </template>
-    <template #fallback>
-      <div>Loading Remote Component...</div>
-    </template>
-  </Suspense>
+  <client-only>
+    <Suspense>
+      <template #default>
+        <div class="">
+          <HelloWorld/>
+        </div>
+      </template>
+      <template #fallback>
+        <div>Loading Remote Component...</div>
+      </template>
+    </Suspense>
+  </client-only>
 </div>
 </template>
